@@ -47,6 +47,10 @@ class ViewController: UIViewController {
                         
                     }else{
                         print("logged in\(authData)")
+                        
+                        // create new user object on firebase
+                        let user = ["provider": authData.provider!, "blahblahblah":"test"]
+                        DataService.ds.createFirebaseUser(authData.uid, user: user)
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier(SEGUE_HOME, sender: nil)
                     }
@@ -71,7 +75,12 @@ class ViewController: UIViewController {
                                     self.showError("Could not create account", msg: "Try another log-in credential")
                                 }else{
                                     NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-                                    DataService.ds.REF_BASE.authUser(email, password: pass, withCompletionBlock: nil)
+
+//                                    DataService.ds.REF_BASE.authUser(email, password: pass, withCompletionBlock: nil)
+                                    DataService.ds.REF_USERS.authUser(email, password: pass, withCompletionBlock: { (error, authData) -> Void in
+                                        let user = ["provider": authData.provider!, "blah2":"test2"]
+                                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+                                    })
                                     self.performSegueWithIdentifier(SEGUE_HOME, sender: nil)
                                 }
                             })
