@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '90D3092C0169B24332FDB54B'
+               BlueprintIdentifier = '296010BC3CE50D6E789C6C45'
                BlueprintName = 'Pods-Social-With-Me'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-Social-With-Me.a'>
+               BuildableName = 'Pods_Social_With_Me.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

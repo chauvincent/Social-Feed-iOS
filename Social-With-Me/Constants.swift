@@ -10,3 +10,10 @@ import Foundation
 import UIKit
 
 let SHADOW_COLOR: CGFloat = 157.0 / 255.0
+let KEY_UID = "uid"
+
+// Segue
+let SEGUE_HOME = "toHome"
+
+// Error Code
+let ERROR_ACCOUNT_DONT_EXIST = -8

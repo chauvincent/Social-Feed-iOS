@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C84842442CC8959FEC6F75B /* Pods_Social_With_Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBC0F45D801D27326AAE1D7 /* Pods_Social_With_Me.framework */; };
 		753990791C42648600C3BA4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990781C42648600C3BA4D /* AppDelegate.swift */; };
 		7539907B1C42648600C3BA4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7539907A1C42648600C3BA4D /* ViewController.swift */; };
 		7539907E1C42648600C3BA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7539907C1C42648600C3BA4D /* Main.storyboard */; };
@@ -37,12 +38,13 @@
 		753990BF1C42744E00C3BA4D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BC1C42744E00C3BA4D /* FBSDKCoreKit.framework */; };
 		753990C01C42744E00C3BA4D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BD1C42744E00C3BA4D /* FBSDKLoginKit.framework */; };
 		753990C11C42744E00C3BA4D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BE1C42744E00C3BA4D /* Bolts.framework */; };
-		F9E7168555119AC9C520656F /* libPods-Social-With-Me.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA9F2EB9DAA52D2FB330341 /* libPods-Social-With-Me.a */; };
+		753990C61C427D7000C3BA4D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990C51C427D7000C3BA4D /* DataService.swift */; };
+		753990CA1C4281B500C3BA4D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990C91C4281B500C3BA4D /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		169937B1EDD515E0B738622C /* Pods-Social-With-Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-With-Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me.release.xcconfig"; sourceTree = "<group>"; };
-		2EA9F2EB9DAA52D2FB330341 /* libPods-Social-With-Me.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Social-With-Me.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBC0F45D801D27326AAE1D7 /* Pods_Social_With_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_With_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		753990751C42648600C3BA4D /* Social-With-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-With-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753990781C42648600C3BA4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7539907A1C42648600C3BA4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		753990BC1C42744E00C3BA4D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		753990BD1C42744E00C3BA4D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		753990BE1C42744E00C3BA4D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		753990C51C427D7000C3BA4D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		753990C91C4281B500C3BA4D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		ED6E13294985F0AFDA55572E /* Pods-Social-With-Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-With-Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,10 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753990CA1C4281B500C3BA4D /* Firebase.framework in Frameworks */,
 				753990C11C42744E00C3BA4D /* Bolts.framework in Frameworks */,
 				753990C01C42744E00C3BA4D /* FBSDKLoginKit.framework in Frameworks */,
 				753990BF1C42744E00C3BA4D /* FBSDKCoreKit.framework in Frameworks */,
-				F9E7168555119AC9C520656F /* libPods-Social-With-Me.a in Frameworks */,
+				2C84842442CC8959FEC6F75B /* Pods_Social_With_Me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +101,8 @@
 		4C9924442698F625EEFA2B41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EA9F2EB9DAA52D2FB330341 /* libPods-Social-With-Me.a */,
+				753990C91C4281B500C3BA4D /* Firebase.framework */,
+				6DBC0F45D801D27326AAE1D7 /* Pods_Social_With_Me.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 		753990771C42648600C3BA4D /* Social-With-Me */ = {
 			isa = PBXGroup;
 			children = (
+				753990C21C427C9D00C3BA4D /* Services */,
 				753990BB1C42741D00C3BA4D /* Frameworks */,
 				753990B41C42682500C3BA4D /* Util */,
 				7539908D1C4264C700C3BA4D /* Resources */,
@@ -212,6 +219,14 @@
 				753990BE1C42744E00C3BA4D /* Bolts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753990C21C427C9D00C3BA4D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				753990C51C427D7000C3BA4D /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7539907B1C42648600C3BA4D /* ViewController.swift in Sources */,
+				753990C61C427D7000C3BA4D /* DataService.swift in Sources */,
 				753990B31C4267E500C3BA4D /* MaterialDesignView.swift in Sources */,
 				753990B81C426BDD00C3BA4D /* MaterialDesignButton.swift in Sources */,
 				753990791C42648600C3BA4D /* AppDelegate.swift in Sources */,
@@ -475,6 +491,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Social-With-Me",
+					"$(PROJECT_DIR)/Pods/Firebase",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "Social-With-Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -492,6 +510,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Social-With-Me",
+					"$(PROJECT_DIR)/Pods/Firebase",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "Social-With-Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

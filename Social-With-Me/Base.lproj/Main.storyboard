@@ -93,7 +93,7 @@
                                         <color key="textColor" red="0.45806773499999998" green="0.72626226859999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO5-AW-VP0" customClass="MaterialDesignTextField" customModule="Social_With_Me" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xO5-AW-VP0" customClass="MaterialDesignTextField" customModule="Social_With_Me" customModuleProvider="target">
                                         <rect key="frame" x="17" y="59" width="521" height="30"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -103,7 +103,7 @@
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AxE-HI-OTv" customClass="MaterialDesignTextField" customModule="Social_With_Me" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AxE-HI-OTv" customClass="MaterialDesignTextField" customModule="Social_With_Me" customModuleProvider="target">
                                         <rect key="frame" x="17" y="106" width="521" height="30"/>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -111,7 +111,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-3q-9iZ" customClass="MaterialDesignButton" customModule="Social_With_Me" customModuleProvider="target">
                                         <rect key="frame" x="73" y="191" width="415" height="30"/>
@@ -125,6 +125,9 @@
                                         <state key="normal" title="Login / SignUp">
                                             <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="emailLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qer-Kz-Mdo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,10 +161,33 @@
                             <constraint firstItem="0rg-VQ-gcx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xQN-Ax-EhG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="xO5-AW-VP0" id="Ged-Tb-EZP"/>
+                        <outlet property="passwordTextField" destination="AxE-HI-OTv" id="xee-52-bpR"/>
+                        <segue destination="vR1-sg-ZZx" kind="show" identifier="toHome" id="dlo-HP-djG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UOZ-ML-eL0">
+            <objects>
+                <viewController id="vR1-sg-ZZx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Heg-WK-O5h"/>
+                        <viewControllerLayoutGuide type="bottom" id="t0N-Zk-qqa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nfh-9f-sdU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBn-MO-yDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="332"/>
         </scene>
     </scenes>
     <resources>
