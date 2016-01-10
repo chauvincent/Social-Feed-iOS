@@ -40,6 +40,8 @@
 		753990C11C42744E00C3BA4D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BE1C42744E00C3BA4D /* Bolts.framework */; };
 		753990C61C427D7000C3BA4D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990C51C427D7000C3BA4D /* DataService.swift */; };
 		753990CA1C4281B500C3BA4D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990C91C4281B500C3BA4D /* Firebase.framework */; };
+		753990CC1C42986C00C3BA4D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990CB1C42986C00C3BA4D /* FeedViewController.swift */; };
+		759DE88B1C429A4E00043C5C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DE88A1C429A4E00043C5C /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		753990BE1C42744E00C3BA4D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		753990C51C427D7000C3BA4D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		753990C91C4281B500C3BA4D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
+		753990CB1C42986C00C3BA4D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		759DE88A1C429A4E00043C5C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		ED6E13294985F0AFDA55572E /* Pods-Social-With-Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-With-Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +149,6 @@
 				7539908A1C42648D00C3BA4D /* View */,
 				7539908B1C4264A500C3BA4D /* Controllers */,
 				753990781C42648600C3BA4D /* AppDelegate.swift */,
-				7539907A1C42648600C3BA4D /* ViewController.swift */,
 				7539907C1C42648600C3BA4D /* Main.storyboard */,
 				7539907F1C42648600C3BA4D /* Assets.xcassets */,
 				753990811C42648600C3BA4D /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 				753990B21C4267E500C3BA4D /* MaterialDesignView.swift */,
 				753990B71C426BDD00C3BA4D /* MaterialDesignButton.swift */,
 				753990B91C426EC800C3BA4D /* MaterialDesignTextField.swift */,
+				759DE88A1C429A4E00043C5C /* PostTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -167,6 +171,8 @@
 		7539908B1C4264A500C3BA4D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7539907A1C42648600C3BA4D /* ViewController.swift */,
+				753990CB1C42986C00C3BA4D /* FeedViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -375,7 +381,9 @@
 				753990B81C426BDD00C3BA4D /* MaterialDesignButton.swift in Sources */,
 				753990791C42648600C3BA4D /* AppDelegate.swift in Sources */,
 				753990BA1C426EC800C3BA4D /* MaterialDesignTextField.swift in Sources */,
+				753990CC1C42986C00C3BA4D /* FeedViewController.swift in Sources */,
 				753990B61C42683200C3BA4D /* Constants.swift in Sources */,
+				759DE88B1C429A4E00043C5C /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
