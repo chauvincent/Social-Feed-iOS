@@ -34,9 +34,15 @@
 		753990B61C42683200C3BA4D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990B51C42683200C3BA4D /* Constants.swift */; };
 		753990B81C426BDD00C3BA4D /* MaterialDesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990B71C426BDD00C3BA4D /* MaterialDesignButton.swift */; };
 		753990BA1C426EC800C3BA4D /* MaterialDesignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990B91C426EC800C3BA4D /* MaterialDesignTextField.swift */; };
+		753990BF1C42744E00C3BA4D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BC1C42744E00C3BA4D /* FBSDKCoreKit.framework */; };
+		753990C01C42744E00C3BA4D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BD1C42744E00C3BA4D /* FBSDKLoginKit.framework */; };
+		753990C11C42744E00C3BA4D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990BE1C42744E00C3BA4D /* Bolts.framework */; };
+		F9E7168555119AC9C520656F /* libPods-Social-With-Me.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA9F2EB9DAA52D2FB330341 /* libPods-Social-With-Me.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		169937B1EDD515E0B738622C /* Pods-Social-With-Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-With-Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me.release.xcconfig"; sourceTree = "<group>"; };
+		2EA9F2EB9DAA52D2FB330341 /* libPods-Social-With-Me.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Social-With-Me.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753990751C42648600C3BA4D /* Social-With-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-With-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753990781C42648600C3BA4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7539907A1C42648600C3BA4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,10 @@
 		753990B51C42683200C3BA4D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		753990B71C426BDD00C3BA4D /* MaterialDesignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignButton.swift; sourceTree = "<group>"; };
 		753990B91C426EC800C3BA4D /* MaterialDesignTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignTextField.swift; sourceTree = "<group>"; };
+		753990BC1C42744E00C3BA4D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		753990BD1C42744E00C3BA4D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		753990BE1C42744E00C3BA4D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ED6E13294985F0AFDA55572E /* Pods-Social-With-Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-With-Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +83,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753990C11C42744E00C3BA4D /* Bolts.framework in Frameworks */,
+				753990C01C42744E00C3BA4D /* FBSDKLoginKit.framework in Frameworks */,
+				753990BF1C42744E00C3BA4D /* FBSDKCoreKit.framework in Frameworks */,
+				F9E7168555119AC9C520656F /* libPods-Social-With-Me.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9924442698F625EEFA2B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA9F2EB9DAA52D2FB330341 /* libPods-Social-With-Me.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		509D0A54179C25C6EE147880 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED6E13294985F0AFDA55572E /* Pods-Social-With-Me.debug.xcconfig */,
+				169937B1EDD515E0B738622C /* Pods-Social-With-Me.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7539906C1C42648600C3BA4D = {
 			isa = PBXGroup;
 			children = (
 				753990771C42648600C3BA4D /* Social-With-Me */,
 				753990761C42648600C3BA4D /* Products */,
+				509D0A54179C25C6EE147880 /* Pods */,
+				4C9924442698F625EEFA2B41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +131,12 @@
 		753990771C42648600C3BA4D /* Social-With-Me */ = {
 			isa = PBXGroup;
 			children = (
+				753990BB1C42741D00C3BA4D /* Frameworks */,
 				753990B41C42682500C3BA4D /* Util */,
 				7539908D1C4264C700C3BA4D /* Resources */,
 				7539908C1C4264BD00C3BA4D /* Model */,
-				7539908B1C4264A500C3BA4D /* Controllers */,
 				7539908A1C42648D00C3BA4D /* View */,
+				7539908B1C4264A500C3BA4D /* Controllers */,
 				753990781C42648600C3BA4D /* AppDelegate.swift */,
 				7539907A1C42648600C3BA4D /* ViewController.swift */,
 				7539907C1C42648600C3BA4D /* Main.storyboard */,
@@ -170,6 +204,16 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		753990BB1C42741D00C3BA4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753990BC1C42744E00C3BA4D /* FBSDKCoreKit.framework */,
+				753990BD1C42744E00C3BA4D /* FBSDKLoginKit.framework */,
+				753990BE1C42744E00C3BA4D /* Bolts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 753990871C42648600C3BA4D /* Build configuration list for PBXNativeTarget "Social-With-Me" */;
 			buildPhases = (
+				EC24AFF0BC444FD6505965ED /* Check Pods Manifest.lock */,
 				753990711C42648600C3BA4D /* Sources */,
 				753990721C42648600C3BA4D /* Frameworks */,
 				753990731C42648600C3BA4D /* Resources */,
+				1807F33DFD8EA4EB7614074D /* Embed Pods Frameworks */,
+				1DDC754352404E5E2FF5B346 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1807F33DFD8EA4EB7614074D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DDC754352404E5E2FF5B346 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC24AFF0BC444FD6505965ED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		753990711C42648600C3BA4D /* Sources */ = {
@@ -373,8 +468,14 @@
 		};
 		753990881C42648600C3BA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6E13294985F0AFDA55572E /* Pods-Social-With-Me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Social-With-Me",
+				);
 				INFOPLIST_FILE = "Social-With-Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vchau.Social-With-Me";
@@ -384,8 +485,14 @@
 		};
 		753990891C42648600C3BA4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 169937B1EDD515E0B738622C /* Pods-Social-With-Me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Social-With-Me",
+				);
 				INFOPLIST_FILE = "Social-With-Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vchau.Social-With-Me";
@@ -412,6 +519,7 @@
 				753990891C42648600C3BA4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
