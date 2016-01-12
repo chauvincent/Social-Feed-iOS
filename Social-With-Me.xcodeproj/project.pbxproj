@@ -41,6 +41,7 @@
 		753990C61C427D7000C3BA4D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990C51C427D7000C3BA4D /* DataService.swift */; };
 		753990CA1C4281B500C3BA4D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753990C91C4281B500C3BA4D /* Firebase.framework */; };
 		753990CC1C42986C00C3BA4D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753990CB1C42986C00C3BA4D /* FeedViewController.swift */; };
+		755FA5941C45BF7E00254ECD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755FA5931C45BF7E00254ECD /* Post.swift */; };
 		759DE88B1C429A4E00043C5C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759DE88A1C429A4E00043C5C /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		753990C51C427D7000C3BA4D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		753990C91C4281B500C3BA4D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		753990CB1C42986C00C3BA4D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		755FA5931C45BF7E00254ECD /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		759DE88A1C429A4E00043C5C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		ED6E13294985F0AFDA55572E /* Pods-Social-With-Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-With-Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-With-Me/Pods-Social-With-Me.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 		7539908C1C4264BD00C3BA4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				755FA5931C45BF7E00254ECD /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				753990CC1C42986C00C3BA4D /* FeedViewController.swift in Sources */,
 				753990B61C42683200C3BA4D /* Constants.swift in Sources */,
 				759DE88B1C429A4E00043C5C /* PostTableViewCell.swift in Sources */,
+				755FA5941C45BF7E00254ECD /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
