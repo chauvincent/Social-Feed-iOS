@@ -11,7 +11,12 @@ import Firebase
 class FeedViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView : UITableView!
+    
     var posts = [Post]()
+ 
+    
+    static var imgCache = NSCache()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -49,7 +54,24 @@ class FeedViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
        // print(post.postDescription)
-        return tableView.dequeueReusableCellWithIdentifier("PostTableViewCell") as! PostTableViewCell
+        if let cell = tableView.dequeueReusableCellWithIdentifier("PostTableViewCell") as? PostTableViewCell{
+            
+            // cancel request optional if same cell
+            cell.request?.cancel()
+            
+            var img: UIImage?
+            
+            if let url = post.imageUrl{
+                img = FeedViewController.imgCache.objectForKey(url) as? UIImage
+            }
+            
+            cell.configureCell(post, img: img)
+            
+            return cell
+        }else{
+            return PostTableViewCell()
+        }
+        
     }
 
 

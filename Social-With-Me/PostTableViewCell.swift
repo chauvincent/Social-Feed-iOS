@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import Alamofire
 
 class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView : UIImageView!
     @IBOutlet weak var postedImage: UIImageView!
+    @IBOutlet weak var descriptionText: UITextView!
+    @IBOutlet weak var likesLabel: UILabel!
+    
+    var post: Post!
+    var request: Request?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-      
-        
         
     }
     // after profile image has size
@@ -26,10 +30,32 @@ class PostTableViewCell: UITableViewCell {
         postedImage.clipsToBounds = true
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(post: Post, img: UIImage?){
+        self.post = post
+        
+        self.descriptionText.text = post.postDescription
+        self.likesLabel.text = "\(post.likes)"
+        
+        // post has images
+        if post.imageUrl != nil{
+            
+            if img != nil{
+                self.postedImage.image = img
+                
+            }else{
+                // request and validate it is image
+                request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { reqest, response, data, error in
+                    if error == nil{
+                        let img = UIImage(data: data!)!
+                        self.postedImage.image = img
+                        FeedViewController.imgCache.setObject(img, forKey: self.post.imageUrl!)
+                    }
+                })
+            }
+        }else{
+            self.postedImage.hidden = true
+        }
+        
     }
 
 }
